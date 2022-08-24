@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 500;
+    min-width: 1200px;
+    min-height: 720px;
+}
+
+#header {
+    font-weight: 500;
+    background: brown;
+    position: relative;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    height: 80px;
+}
+
+#header > a:hover {
+    color: #800080;
+    text-decoration: underline;
+}
+
+.header-menu-wrap {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.header-menu-wrapp {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-left: 5%;
+}
+
+.header-logo {
+    min-height: 65px;
+    align-items: center;
+    display: flex;
+    width: 20%;
+    margin-left: 5%;
+}
+
+.header-basket {
+    min-height: 65px;
+    align-items: center;
+    display: flex;
+    width: 8%;
+    margin-left: auto;
+    margin-right: 0;
+    border: none;
+}
+
+.out {
+    min-height: 65px;
+    align-items: center;
+    display: flex;
+    width: 15%;
+    margin-left: auto;
+    margin-right: 0;
+    border: none;
+}
+
+.header-basket > a, .out > a {
+    font-size: 18px;
+    color: #808080;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+.header-basket > a {
+    font-size: 18px;
+}
+
+ .out > a {
+    font-size: 22px;
+}
+
+.header-login {
+    min-height: 65px;
+    align-items: center;
+    display: flex;
+    width: 8%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.header-login > a {
+    font-size: 18px;
+    color: #808080;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+
+nav.header-container {
+    width: 50%;
+    margin-left: 4%;
+}
+
+.menu-nav-punkt{
+    font-size: 25px;
+}
+
+nav.header-container > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+nav.header-container > ul > li {
+    width: 25%;
+    text-align: center;
+}
+
+nav.header-container > ul > li > a {
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+
+nav.header-container > ul > li > a:hover {
+    color: #1e90ff;
+}
+
+a:hover {
+    color: #FF8C00;
+}

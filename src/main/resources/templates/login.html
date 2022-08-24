@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <title>Интернет-магазин "Краник"</title>
+    <link rel="stylesheet" th:href="@{/css/header.css}"/>
+    <link rel="stylesheet" th:href="@{/css/footer.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+
+</head>
+
+<body th:background="@{/images/back1.jpg}">
+<header id="header" style="background: white; opacity: 0.95;">
+    <div class="header-logo">
+        <a href="/"><img th:src="@{/images/logo-removebg-preview.png}" width="100%" height="100%"></a>
+    </div>
+    <nav class="header-container">
+        <ul>
+            <li><a href="/" class="menu-nav-punkt">Главная</a></li>
+            <li><a href="/design" class="menu-nav-punkt">Каталог</a></li>
+            <li><a href="/" class="menu-nav-punkt">О магазине</a></li>
+            <li><a href="/" class="menu-nav-punkt">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="catalog">
+    <h1>Авторизация</h1><br><br>
+
+    <div th:if="${error}">
+        Unable to login. Check your username and password.
+    </div>
+
+    <p>New here? Click
+        <a th:href="@{/register}">here</a> to register.</p>
+
+    <form method="POST" th:action="@{/login}" id="loginForm">
+        <label for="username" class="label">Логин: </label>
+        <input type="text" name="username"/><br/>
+
+        <label for="password" class="label">Пароль: </label>
+        <input type="password" name="password"/><br/>
+
+        <input type="submit" value="Войти"/>
+    </form>
+</div>
+
+<div id="footer">
+    <div class="bottom">
+        <div class="info">
+            <h6>Коротко о магазине</h6>
+            <a>Интернет-магазин "Сантехника62" предоставляет широкий ассортимент сантехники, который сочетается с
+                отличными ценами.</a>
+        </div>
+
+        <div class="contacts">
+            <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Наши конкакты</h6>
+            <ul class="contacts-menu">
+                <li>
+                    <a>Адрес: ул. Пушкина, д. 137</a>
+                </li>
+                <li>
+                    <a>Телефон: +7 (4912) 80-80-80</a>
+                </li>
+                <li>
+                    <a>Email: santixnika62@mail.ru</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="company">
+        <a text-size="12">© 2002—2021 Магазин "Сантехника62".</a>
+    </div>
+</div>
+</body>
+</html>
